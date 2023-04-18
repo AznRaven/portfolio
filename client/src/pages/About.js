@@ -8,7 +8,7 @@ const { feArr, beArr, cmArr } = data;
 export default function About() {
   let fe = feArr.map((x) => {
     return (
-      <div className="skillIcon d-flex flex-column text-center col-5 col-sm-3 col-md-3 shadow">
+      <div className="skillIcon d-flex flex-column text-center col-5 col-sm-3 col-lg-2 shadow">
         <div className="skillImg">
           <img className="skills" src={`${x.img}`} alt={x.name} />
         </div>
@@ -23,7 +23,7 @@ export default function About() {
 
   let be = beArr.map((x) => {
     return (
-      <div className="skillIcon d-flex flex-column text-center col-5 col-sm-3 col-md-3 shadow">
+      <div className="skillIcon d-flex flex-column text-center col-5 col-sm-3 col-lg-2 shadow">
         <div className="skillImg">
           <img className="skills" src={`${x.img}`} alt={x.name} />
         </div>
@@ -38,7 +38,7 @@ export default function About() {
 
   let cm = cmArr.map((x) => {
     return (
-      <div className="skillIcon d-flex flex-column text-center col-5 col-sm-3 col-md-3 shadow">
+      <div className="skillIcon d-flex flex-column text-center col-5 col-sm-3 col-lg-2 shadow">
         <div className="skillImg">
           <img className="skills" src={`${x.img}`} alt={x.name} />
         </div>
@@ -79,7 +79,7 @@ export default function About() {
       <section className="flex-container container-fluid">{be}</section>
       {/* end of Backend */}
 
-      <br />
+      {/* <br />
       <br />
       <br />
       <br />
@@ -89,7 +89,7 @@ export default function About() {
       <br />
       <br />
       <br />
-      <br />
+      <br /> */}
     </>
   );
 }

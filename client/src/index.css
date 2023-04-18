@@ -42,14 +42,14 @@ code {
 }
 
 img{
-  width: 100%;
+  width: 50%;
   height: auto;
   
 }
 
 .iconText{
   /* border: 4px solid blue; */
-  font-size: 4vw;
+  font-size: 3vw;
   width: 100%;
 }
 
