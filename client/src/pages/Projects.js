@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 // import data from '../data.js';
 
 // const { feArr, beArr, cmArr, projArr } = data;
@@ -19,41 +19,123 @@ export default function Projects() {
   // });
   return (
     <>
-      <div>
-        {/* <h1>Hello Projects</h1> */}
-        <br></br>
-        <h1>Projects:</h1>
-        <br></br>
-        <h4>Mod 3 Project: The Full Stack MERN App</h4>
-        <div className="projImg shadow">
-          <Link to="https://myworkoutlog-frontend.onrender.com/" target="_blank">
-            <img src={require('../images/workOutHome.JPG')} alt='Workout Log'></img>
-            <h1>Workout Journal/Log</h1>
-          </Link>
+      <div className="d-flex justify-content-evenly flex-wrap border">
+        {/* Project Row Mod 3*/}
+        <div className="d-flex my-3 justify-content-evenly col-sm-12 col-md-5 col-lg-5">
+          <div className="shadow row justify-content-evenly py-3">
+            <h4 className="bg-primary text-light">
+              Mod 3 Project: Full Stack Mern
+            </h4>
+            <div className="col-11 d-flex justify-content-evenly">
+              {/* Trivia */}
+              <div
+                class="card col-5 m-0 p-0 shadow-lg"
+                style={{ width: "18rem;" }}
+              >
+                <h1 className="fs-3">Take Order</h1>
+                <a href="https://feorder.onrender.com/orders">
+                  <img
+                  src="https://res.cloudinary.com/djzwz76tr/image/upload/v1681869503/portfolio/FSOrder_uoixzm.png"
+                  class="card-img-top"
+                  alt="Trivia"
+                />
+                  </a>
+                <div class="card-body border">
+                  <p class="card-text">
+                    Webapp to take orders at restaurants.
+                  </p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
         </div>
-        <br />
-        {/* <Link to="https://myworkoutlog-frontend.onrender.com/">
-          Workout Journal/Log
-        </Link> */}
-        <br />
-        <h4>Mod 2 Project: My First React Application</h4>
-        <div className="projImg shadow">
-          <Link to="https://rick-and-morty-api1.netlify.app/" target="_blank">
-            <img src={require('../images/rmpic.JPG')} alt='Rick and Morty API'></img>
-            <h1>Rick and Morty API</h1>
-          </Link>
+        {/* Project Row Mod 2*/}
+        <div className="d-flex my-3 justify-content-evenly col-sm-12 col-md-5 col-lg-5">
+          <div className="shadow row justify-content-evenly py-3">
+            <h4 className="bg-primary text-light">
+              Mod 2 Project: JavaScript React Api Calls
+            </h4>
+            <div className="col-11 d-flex justify-content-evenly">
+              
+              {/* Api */}
+              <div
+                class="card col-5 m-0 p-0 shadow-lg"
+                style={{ width: "18rem;" }}
+              >
+                <h1 className="fs-3">Api Calls</h1>
+                <a href="https://feorder.onrender.com/orders">
+
+                </a>
+                <a href="https://res.cloudinary.com/djzwz76tr/image/upload/v1681928900/portfolio/Mod2_gogiwz.png">
+                  <img
+                  src="https://res.cloudinary.com/djzwz76tr/image/upload/v1681928900/portfolio/Mod2_gogiwz.png"
+                  class="card-img-top"
+                  alt="Trivia"
+                />
+                </a>
+                
+                <div class="card-body border">
+                  <p class="card-text">
+                    Giphy/Marvel/Pokemon/Rick and Morty/Weather.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <br />
-        <h4>Mod 1 Project: Game On!</h4>
-        <div className="projImg shadow">
-          <Link to="https://jasongithubliu.github.io/TicTacToeGame/" target="_blank">
-            <img src={require('../images/tictactoe.JPG')} alt='Tic Tac Toe'></img>
-            <h1>Tic Tac Toe</h1>
-          </Link>
+        {/* Project Row Mod 1*/}
+        <div className="d-flex my-3 justify-content-evenly col-sm-12 col-md-5 col-lg-5">
+          <div className="shadow row justify-content-evenly py-3">
+            <h4 className="bg-primary text-light">
+              Mod 1 Project: Game
+            </h4>
+            <div className="col-11 d-flex justify-content-evenly">
+              {/* Trivia */}
+              <div
+                class="card col-5 m-0 p-0 shadow-lg"
+                style={{ width: "18rem;" }}
+              >
+                <h1 className="fs-4">Aznraven's Trivia</h1>
+                <a href="https://aznraven.github.io/Trivia/">
+                  <img
+                  src="https://res.cloudinary.com/djzwz76tr/image/upload/v1681869508/portfolio/Trivia_vsyojd.png"
+                  class="card-img-top"
+                  alt="Trivia"
+                />
+                </a>
+                
+                <div class="card-body border">
+                  <p class="card-text">
+                    Test your CSS/JavaScript/HTML knowledge in this trivia game
+                  </p>
+                </div>
+              </div>
+              {/* Memory */}
+              <div
+                class="card col-5 m-0 p-0 shadow-lg"
+                style={{ width: "18rem;" }}
+              >
+                <h1 className="fs-4">Memory Madness</h1>
+                <a href="https://aznraven.github.io/memory-madness/">
+                  <img
+                  src="https://res.cloudinary.com/djzwz76tr/image/upload/v1681872774/portfolio/Memory_znkj6a.png"
+                  class="card-img-top"
+                  alt="Trivia"
+                />
+                </a>
+                
+                <div class="card-body border">
+                  <p class="card-text">
+                    Test your memory and copy the pattern. See how far you can
+                    go.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <br />
-        <br />
-        <br />
+        
       </div>
     </>
   );
