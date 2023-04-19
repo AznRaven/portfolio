@@ -26,6 +26,7 @@ export default function Projects() {
             <h4 className="bg-primary text-light">
               Mod 3 Project: Full Stack Mern
             </h4>
+            <p>Hosted on Render</p>
             <div className="col-11 d-flex justify-content-evenly">
               {/* Trivia */}
               <div
@@ -56,6 +57,7 @@ export default function Projects() {
             <h4 className="bg-primary text-light">
               Mod 2 Project: JavaScript React Api Calls
             </h4>
+            <p>Hosted on Netlify</p>
             <div className="col-11 d-flex justify-content-evenly">
               
               {/* Api */}
@@ -90,6 +92,7 @@ export default function Projects() {
             <h4 className="bg-primary text-light">
               Mod 1 Project: Game
             </h4>
+            <p>Hosted on GitHub Pages</p>
             <div className="col-11 d-flex justify-content-evenly">
               {/* Trivia */}
               <div
