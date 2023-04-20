@@ -30,7 +30,7 @@ export default function Projects() {
             <div className="col-11 d-flex justify-content-evenly">
               {/* Trivia */}
               <div
-                class="card col-5 m-0 p-0 shadow-lg"
+                class="card col-11 m-0 p-0 shadow-lg"
                 style={{ width: "18rem;" }}
               >
                 <h1 className="fs-3">Take Order</h1>
@@ -62,13 +62,11 @@ export default function Projects() {
               
               {/* Api */}
               <div
-                class="card col-5 m-0 p-0 shadow-lg"
+                class="card col-11 m-0 p-0 shadow-lg"
                 style={{ width: "18rem;" }}
               >
                 <h1 className="fs-3">Api Calls</h1>
-                <a href="https://feorder.onrender.com/orders">
-
-                </a>
+                
                 <a href="https://res.cloudinary.com/djzwz76tr/image/upload/v1681928900/portfolio/Mod2_gogiwz.png">
                   <img
                   src="https://res.cloudinary.com/djzwz76tr/image/upload/v1681928900/portfolio/Mod2_gogiwz.png"
@@ -90,7 +88,7 @@ export default function Projects() {
         <div className="d-flex my-3 justify-content-evenly col-sm-12 col-md-5 col-lg-5">
           <div className="shadow row justify-content-evenly py-3">
             <h4 className="bg-primary text-light">
-              Mod 1 Project: Game
+              Mod 1 Project: Create A Game
             </h4>
             <p>Hosted on GitHub Pages</p>
             <div className="col-11 d-flex justify-content-evenly">

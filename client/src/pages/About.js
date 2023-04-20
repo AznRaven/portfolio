@@ -53,12 +53,7 @@ export default function About() {
   return (
     <>
       <br />
-      <h1> About</h1>
-      <br />
-      <br />
-      <br />
-      <br />
-      <h1>SKILLS</h1>
+      {/* <h1>SKILLS</h1> */}
 
       <br />
       <br />

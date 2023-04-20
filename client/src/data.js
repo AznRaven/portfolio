@@ -4,8 +4,12 @@ let feArr = [
     img: 'https://res.cloudinary.com/ddl0mgnds/image/upload/v1680934860/Portfolio/icons8-nodejs-480_say6wq.png',
   },
   {
-    name: 'ReactJS',
+    name: 'React.JS',
     img: 'https://res.cloudinary.com/ddl0mgnds/image/upload/v1680934860/Portfolio/icons8-react-native-480_znsjak.png',
+  },
+  {
+    name: 'Redux.JS',
+    img: 'https://res.cloudinary.com/djzwz76tr/image/upload/v1682019476/portfolio/Skills/redux_x63j8p.png',
   },
   {
     name: 'JavaScript',
@@ -26,6 +30,14 @@ let feArr = [
 ];
 
 let beArr = [
+  {
+    name: 'Express.JS',
+    img: 'https://res.cloudinary.com/djzwz76tr/image/upload/v1682019243/portfolio/Skills/express.js_jmxxkc.png',
+  },
+  {
+    name: 'JSON Web Token',
+    img: 'https://res.cloudinary.com/djzwz76tr/image/upload/v1682019771/portfolio/Skills/jwt_jfbusy.png',
+  },
   {
     name: 'Node.JS',
     img: 'https://res.cloudinary.com/ddl0mgnds/image/upload/v1680934860/Portfolio/icons8-nodejs-480_say6wq.png',
