@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <>
+    <br/><br/>
       <h1>Hai D. Hoang</h1>
       <br/>
       <h3>
