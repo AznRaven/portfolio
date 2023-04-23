@@ -8,7 +8,7 @@ const { feArr, beArr, cmArr } = data;
 export default function About() {
   let fe = feArr.map((x) => {
     return (
-      <div className="skillIcon d-flex flex-column text-center col-5 col-sm-3 col-lg-1 shadow">
+      <div className="skillIcon border border-primary d-flex flex-column text-center col-5 col-sm-3 col-lg-1 shadow">
         <div className="skillImg">
           <img className="skills" src={`${x.img}`} alt={x.name} />
         </div>
@@ -23,7 +23,7 @@ export default function About() {
 
   let be = beArr.map((x) => {
     return (
-      <div className="skillIcon d-flex flex-column text-center col-5 col-sm-3 col-lg-1 shadow">
+      <div className="skillIcon border border-primary d-flex flex-column text-center col-5 col-sm-3 col-lg-1 shadow">
         <div className="skillImg">
           <img className="skills" src={`${x.img}`} alt={x.name} />
         </div>
@@ -38,7 +38,7 @@ export default function About() {
 
   let cm = cmArr.map((x) => {
     return (
-      <div className="skillIcon d-flex flex-column text-center col-5 col-sm-3 col-lg-2 shadow">
+      <div className="skillIcon border border-primary d-flex flex-column text-center col-5 col-sm-3 col-lg-2 shadow">
         <div className="skillImg">
           <img className="skills" src={`${x.img}`} alt={x.name} />
         </div>
@@ -62,7 +62,7 @@ export default function About() {
       </strong>
 
       <br />
-      <section className="flex-container container-fluid">{fe}</section>
+      <section className="flex-container container-fluid flex-wrap ">{fe}</section>
 
       <br />
       <br />
