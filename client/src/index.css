@@ -23,6 +23,10 @@ code {
   flex-wrap: wrap;
 }
 
+.homebtn {
+  width: 20vh;
+}
+
 .skill {
   text-align: center;
   font-size: 2vh;
