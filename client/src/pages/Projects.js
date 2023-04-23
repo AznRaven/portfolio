@@ -19,11 +19,15 @@ export default function Projects() {
   // });
   return (
     <>
-      <div className="d-flex justify-content-evenly flex-wrap border">
+    <br/><br/>
+      <div className="d-flex justify-content-evenly flex-wrap">
+        {/* Per Scholas */}
+        <div className="row d-flex justify-content-evenly flex-wrap">
+          <h1 className="bg-danger text-white ">Per Scholas</h1>
         {/* Project Row Mod 3*/}
-        <div className="d-flex my-3 justify-content-evenly col-sm-12 col-md-5 col-lg-5">
-          <div className="shadow row justify-content-evenly py-3">
-            <h4 className="bg-primary text-light">
+        <div className="d-flex my-3 justify-content-evenly col-sm-12 col-md-5 col-lg-3">
+          <div className="shadow row justify-content-evenly py-3 rounded">
+            <h4 className="bg-primary text-light rounded-top">
               Mod 3 Project: Full Stack Mern
             </h4>
             <p>Hosted on Render</p>
@@ -52,9 +56,9 @@ export default function Projects() {
           </div>
         </div>
         {/* Project Row Mod 2*/}
-        <div className="d-flex my-3 justify-content-evenly col-sm-12 col-md-5 col-lg-5">
-          <div className="shadow row justify-content-evenly py-3">
-            <h4 className="bg-primary text-light">
+        <div className="d-flex my-3 justify-content-evenly col-sm-12 col-md-5 col-lg-3">
+        <div className="shadow row justify-content-evenly py-3 rounded">
+            <h4 className="bg-primary text-light rounded-top">
               Mod 2 Project: JavaScript React Api Calls
             </h4>
             <p>Hosted on Netlify</p>
@@ -85,9 +89,9 @@ export default function Projects() {
           </div>
         </div>
         {/* Project Row Mod 1*/}
-        <div className="d-flex my-3 justify-content-evenly col-sm-12 col-md-5 col-lg-5">
-          <div className="shadow row justify-content-evenly py-3">
-            <h4 className="bg-primary text-light">
+        <div className="d-flex my-3 justify-content-evenly col-sm-12 col-md-5 col-lg-3">
+        <div className="shadow row justify-content-evenly py-3 rounded">
+            <h4 className="bg-primary text-light rounded-top">
               Mod 1 Project: Create A Game
             </h4>
             <p>Hosted on GitHub Pages</p>
@@ -135,6 +139,8 @@ export default function Projects() {
               </div>
             </div>
           </div>
+        </div>
+        
         </div>
         
       </div>
