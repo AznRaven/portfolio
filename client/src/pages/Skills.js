@@ -66,8 +66,6 @@ export default function About() {
 
       <br />
       <br />
-      <br />
-      <br />
 
       <h1 className="bg-primary text-white">Backend Development</h1>
       <br />

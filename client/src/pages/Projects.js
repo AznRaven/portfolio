@@ -20,7 +20,7 @@ export default function Projects() {
   return (
     <>
     <br/><br/>
-      <div className="d-flex justify-content-evenly flex-wrap">
+      <div className="d-flex justify-content-evenly flex-wrap container-fluid">
         {/* Per Scholas */}
         <div className="row d-flex justify-content-evenly flex-wrap">
           <h1 className="bg-danger text-white ">Per Scholas</h1>
