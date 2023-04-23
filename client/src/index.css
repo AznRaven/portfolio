@@ -1,3 +1,7 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -89,4 +93,38 @@ a{
 
 .jcc {
   justify-content: center;
+}
+
+
+li {
+  background-color: var(--background-color);
+  color: black;
+  border: none;
+  outline: none;
+  position: relative;
+  /* left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--border-size); */
+  --background-color: white;
+  --border-size: 2px;
+  --accent-color: lightblue;
+}
+
+li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--border-size);
+  background-color: var(--accent-color);
+  transition: transform 300ms ease-in-out;
+
+  transform: scaleX(0);
+}
+
+li:hover::before,
+li:focus::after{
+  transform: scaleX(1);
 }

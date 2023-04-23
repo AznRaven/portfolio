@@ -17,7 +17,7 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav d-flex">
             <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to="/">
                 Home
@@ -29,6 +29,11 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
+              <Link className="nav-link" to="/projects">
+                Projects
+              </Link>
+            </li>
+            <li className="nav-item ms-auto">
               <Link className="nav-link" to="/projects">
                 Projects
               </Link>
