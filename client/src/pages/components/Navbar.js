@@ -33,11 +33,11 @@ export default function Navbar() {
                 Projects
               </Link>
             </li>
-            <li className="nav-item ms-auto">
+            {/* <li className="nav-item ms-auto">
               <Link className="nav-link" to="/projects">
                 Projects
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

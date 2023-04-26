@@ -64,7 +64,7 @@ img{
 
 .iconText{
   /* border: 4px solid blue; */
-  font-size: 1.5vw;
+  font-size: 1.9vw;
   width: 100%;
 }
 
@@ -102,10 +102,6 @@ li {
   border: none;
   outline: none;
   position: relative;
-  /* left: 0;
-  right: 0;
-  bottom: 0;
-  height: var(--border-size); */
   --background-color: white;
   --border-size: 2px;
   --accent-color: lightblue;
