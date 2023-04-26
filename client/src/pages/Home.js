@@ -1,25 +1,102 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import Api from "./components/Api";
 import Footer from "./components/Footer";
+import MemoryMadness from "./components/MemoryMadness";
+import TakeOrder from "./components/TakeOrder";
+import Test from "./components/Test";
+import Trivia from "./components/Trivia";
+import Welcome from "./components/Welcome";
 export default function Home() {
+  const [api, setApi] = useState(false);
+  const [mem, setMem] = useState(false);
+  const [showWelcome, setShowWelcome] = useState(true);
+  const [takeOrder, setTakeOrder] = useState(false);
+  const [test, setTest] = useState(false);
+  const [trivia, setTrivia] = useState(false);
   return (
     <>
       <br />
       <br />
-      <div className="hpcontainer justify-content-center align-items-center d-flex">
-        <div className="hpcontent">
-          <div className="row border">
-            <div className="col-8">
-              <h1>Welcome.</h1>
-              <br />
-              <h3>
-                My name is Hai Hoang. I'm a full stack developer based in
-                Dallas, TX. <br />
-                <br />
-                I'm passionate about creating and solving problems through web
-                development.
-              </h3>
+      <div className="hpcontainer justify-content-center align-items-center d-flex container-fluid">
+        <div className="hpcontent container container-fluid">
+          <div className="row container-fluid">
+            <div className="showContent col-10">
+              {api && <Api />}
+              {mem && <MemoryMadness />}
+              {showWelcome && <Welcome />}
+              {takeOrder && <TakeOrder />}
+              {trivia && <Trivia />}
+              {test && <Test />}
             </div>
-            <div className="col-4"></div>
+            <div className="col-2 p-3 d-flex flex-column align-items-center">
+              <h2 className="border p-3">Projects</h2>
+              <div
+                className="projLink m-2"
+                onClick={() => {
+                  setShowWelcome(true);
+                  setApi(false);
+                  setMem(false);
+                  setTakeOrder(false);
+                  setTest(false);
+                  setTrivia(false);
+                }}
+              >
+                Me
+              </div>
+              <div
+                className="projLink m-2"
+                onClick={() => {
+                  setTakeOrder(true);
+                  setApi(false);
+                  setMem(false);
+                  setShowWelcome(false);
+                  setTest(false);
+                  setTrivia(false);
+                }}
+              >
+                Take Orders
+              </div>
+              <div
+                className="projLink m-2"
+                onClick={() => {
+                  setApi(true);
+                  setMem(false);
+                  setTakeOrder(false);
+                  setShowWelcome(false);
+                  setTest(false);
+                  setTrivia(false);
+                }}
+              >
+                Api Calls
+              </div>
+              <div
+                className="projLink m-2"
+                onClick={() => {
+                  setMem(true);
+                  setApi(false);
+                  setTakeOrder(false);
+                  setShowWelcome(false);
+                  setTest(false);
+                  setTrivia(false);
+                }}
+              >
+                Memory Madness
+              </div>
+              <div
+                className="projLink m-2"
+                onClick={() => {
+                  setTrivia(true);
+                  setMem(false);
+                  setApi(false);
+                  setTakeOrder(false);
+                  setShowWelcome(false);
+                  setTest(false);
+                }}
+              >
+                Trivia
+              </div>
+            </div>
           </div>
 
           <br />
