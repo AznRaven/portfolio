@@ -5,9 +5,9 @@ export default function Home() {
     <>
       <br />
       <br />
-      <div className="hpcontainer">
+      <div className="hpcontainer justify-content-center align-items-center d-flex">
         <div className="hpcontent">
-          <div className="row">
+          <div className="row border">
             <div className="col-8">
               <h1>Welcome.</h1>
               <br />
