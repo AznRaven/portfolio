@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow">
-      <div className="container-fluid">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow">
+      <div className="container-fluid bg-dark">
         {/* <a className="navbar-brand" href="#">Navbar</a> */}
         <button
           className="navbar-toggler"
@@ -19,19 +19,19 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav d-flex">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/">
+              <Link className="nav-link active bg-dark text-white" aria-current="page" to="/">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/skills">
+              <a className="nav-link bg-dark text-white" href="#skills">
                 Skills
-              </Link>
+              </a>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/projects">
+            <li className="nav-item bg-dark">
+              <a className="nav-link text-white" href="#top">
                 Projects
-              </Link>
+              </a>
             </li>
             {/* <li className="nav-item ms-auto">
               <Link className="nav-link" to="/projects">

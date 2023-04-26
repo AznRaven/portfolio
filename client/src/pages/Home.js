@@ -16,88 +16,96 @@ export default function Home() {
   const [trivia, setTrivia] = useState(false);
   return (
     <>
-      <br />
-      <br />
+      <a id="top"></a>
       <div className="hpcontainer justify-content-center align-items-center d-flex container-fluid">
         <div className="hpcontent container container-fluid">
-          <div className="row container-fluid">
-            <div className="showContent col-10">
-              {api && <Api />}
-              {mem && <MemoryMadness />}
-              {showWelcome && <Welcome />}
-              {takeOrder && <TakeOrder />}
-              {trivia && <Trivia />}
-              {test && <Test />}
+          <section>
+
+            <div className="row container-fluid">
+              <div className="showContent col-10">
+                {api && <Api />}
+                {mem && <MemoryMadness />}
+                {showWelcome && <Welcome />}
+                {takeOrder && <TakeOrder />}
+                {trivia && <Trivia />}
+                {test && <Test />}
+              </div>
+              <div className="col-2 p-3 d-flex flex-column align-items-center">
+                <h2 id="projects" className="border p-3">
+                  Projects
+                </h2>
+                <div
+                  className="projLink m-2"
+                  onClick={() => {
+                    setShowWelcome(true);
+                    setApi(false);
+                    setMem(false);
+                    setTakeOrder(false);
+                    setTest(false);
+                    setTrivia(false);
+                  }}
+                >
+                  Me
+                </div>
+                <div
+                  className="projLink m-2"
+                  onClick={() => {
+                    setTakeOrder(true);
+                    setApi(false);
+                    setMem(false);
+                    setShowWelcome(false);
+                    setTest(false);
+                    setTrivia(false);
+                  }}
+                >
+                  Take Orders
+                </div>
+                <div
+                  className="projLink m-2"
+                  onClick={() => {
+                    setApi(true);
+                    setMem(false);
+                    setTakeOrder(false);
+                    setShowWelcome(false);
+                    setTest(false);
+                    setTrivia(false);
+                  }}
+                >
+                  Api Calls
+                </div>
+                <div
+                  className="projLink m-2"
+                  onClick={() => {
+                    setMem(true);
+                    setApi(false);
+                    setTakeOrder(false);
+                    setShowWelcome(false);
+                    setTest(false);
+                    setTrivia(false);
+                  }}
+                >
+                  Memory Madness
+                </div>
+                <div
+                  className="projLink m-2"
+                  onClick={() => {
+                    setTrivia(true);
+                    setMem(false);
+                    setApi(false);
+                    setTakeOrder(false);
+                    setShowWelcome(false);
+                    setTest(false);
+                  }}
+                >
+                  Trivia
+                </div>
+              </div>
             </div>
-            <div className="col-2 p-3 d-flex flex-column align-items-center">
-              <h2 className="border p-3">Projects</h2>
-              <div
-                className="projLink m-2"
-                onClick={() => {
-                  setShowWelcome(true);
-                  setApi(false);
-                  setMem(false);
-                  setTakeOrder(false);
-                  setTest(false);
-                  setTrivia(false);
-                }}
-              >
-                Me
-              </div>
-              <div
-                className="projLink m-2"
-                onClick={() => {
-                  setTakeOrder(true);
-                  setApi(false);
-                  setMem(false);
-                  setShowWelcome(false);
-                  setTest(false);
-                  setTrivia(false);
-                }}
-              >
-                Take Orders
-              </div>
-              <div
-                className="projLink m-2"
-                onClick={() => {
-                  setApi(true);
-                  setMem(false);
-                  setTakeOrder(false);
-                  setShowWelcome(false);
-                  setTest(false);
-                  setTrivia(false);
-                }}
-              >
-                Api Calls
-              </div>
-              <div
-                className="projLink m-2"
-                onClick={() => {
-                  setMem(true);
-                  setApi(false);
-                  setTakeOrder(false);
-                  setShowWelcome(false);
-                  setTest(false);
-                  setTrivia(false);
-                }}
-              >
-                Memory Madness
-              </div>
-              <div
-                className="projLink m-2"
-                onClick={() => {
-                  setTrivia(true);
-                  setMem(false);
-                  setApi(false);
-                  setTakeOrder(false);
-                  setShowWelcome(false);
-                  setTest(false);
-                }}
-              >
-                Trivia
-              </div>
-            </div>
-          </div>
+          </section>
+          <section className="section" id="skills">
+            
+            skills
+            </section>
 
           <br />
           <br />
@@ -164,8 +172,8 @@ export default function Home() {
           </div>
         </div>
 
-        <Footer />
       </div>
+        
     </>
   );
 }

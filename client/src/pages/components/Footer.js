@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <>
-      <div className="footer">Copyright </div>
+      <div className="fixed-bottom">Copyright </div>
     </>
   );
 }

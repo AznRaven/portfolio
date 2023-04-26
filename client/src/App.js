@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Navbar from './pages/components/Navbar';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
+import Footer from './pages/components/Footer';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
