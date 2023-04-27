@@ -8,13 +8,14 @@ import Test from "./components/Test";
 import Trivia from "./components/Trivia";
 import Skills from "./Skills";
 import Welcome from "./components/Welcome";
-import { Navigation, Pagination, Scrollbar, A11y, EffectCube } from "swiper";
+import { Navigation, Pagination, Scrollbar, A11y, EffectCube, EffectCoverflow } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/effect-cube";
+import "swiper/css/effect-coverflow";
 
 import Projects from "./Projects";
 export default function Home() {
@@ -24,7 +25,6 @@ export default function Home() {
   const [takeOrder, setTakeOrder] = useState(false);
   const [test, setTest] = useState(false);
   const [trivia, setTrivia] = useState(false);
-  // const swiper = new Swiper(...);
 
   return (
     <>
@@ -120,9 +120,9 @@ export default function Home() {
           <section className="section" id="projects">
             <Swiper
               // install Swiper modules
-              modules={[Navigation, Pagination, Scrollbar, A11y, EffectCube]}
+              modules={[Navigation, Pagination, Scrollbar, A11y, EffectCube,EffectCoverflow]}
               spaceBetween={50}
-              slidesPerView={1}
+              slidesPerView={2}
               loop
               effect="cube"
               navigation

@@ -14,7 +14,7 @@ export default function TakeOrder() {
               {/* Trivia */}
               <div
                 class="card col-12 col-lg-6 m-0 p-0 shadow-lg"
-                style={{ width: "18rem;" }}
+                // style={{ width: "18rem;" }}
               >
                 <h1 className="fs-3">Take Order</h1>
                 <a href="https://feorder.onrender.com/orders">

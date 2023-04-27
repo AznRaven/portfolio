@@ -20,7 +20,7 @@ code {
 
 h1{
   font-size: 4rem;
-  background: linear-gradient(to right, rgb(67,124,205), #00d4ff);
+  background: linear-gradient(to right, yellow, red);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   pointer-events: none;
@@ -223,4 +223,28 @@ li:focus::after{
 .swiper {
   width: 100vw;
   height: 100vh;
+}
+
+.button-three {
+  --button-color: black;
+  overflow: hidden;
+}
+
+.button-three .hamburger {
+  transition: translate 1s, rotate 1s;
+}
+
+.button-three[aria-expanded="true"] .hamburger {
+  translate: 2px -4px;
+  rotate: 0.125turn;
+}
+
+.button-three .line {
+  transition: 1s;
+  stroke-dasharray: 60 31 60 300;
+}
+
+.button-three[aria-expanded="true"] .line {
+  stroke-dasharray: 60 105 60 300;
+  stroke-dashoffset: -90;
 }

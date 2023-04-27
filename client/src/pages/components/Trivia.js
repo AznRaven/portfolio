@@ -12,7 +12,7 @@ export default function Trivia() {
             class="card col-12 col-lg-6 m-0 p-0 shadow-lg"
             // style={{ width: "18rem;" }}
           >
-            <h1 className="fs-3">Aznraven's Trivia</h1>
+            {/* <h1 className="fs-3">Aznraven's Trivia</h1> */}
             <a href="https://aznraven.github.io/Trivia/">
               <img
                 src="https://res.cloudinary.com/djzwz76tr/image/upload/v1681869508/portfolio/Trivia_vsyojd.png"
