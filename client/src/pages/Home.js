@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Api from "./components/Api";
 import Footer from "./components/Footer";
@@ -6,7 +6,17 @@ import MemoryMadness from "./components/MemoryMadness";
 import TakeOrder from "./components/TakeOrder";
 import Test from "./components/Test";
 import Trivia from "./components/Trivia";
+import Skills from "./Skills";
 import Welcome from "./components/Welcome";
+import { Navigation, Pagination, Scrollbar, A11y, EffectCube } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css/effect-cube";
+
+import Projects from "./Projects";
 export default function Home() {
   const [api, setApi] = useState(false);
   const [mem, setMem] = useState(false);
@@ -14,14 +24,16 @@ export default function Home() {
   const [takeOrder, setTakeOrder] = useState(false);
   const [test, setTest] = useState(false);
   const [trivia, setTrivia] = useState(false);
+  // const swiper = new Swiper(...);
+
   return (
     <>
       <a id="top"></a>
       <div className="hpcontainer justify-content-center align-items-center d-flex container-fluid">
         <div className="hpcontent container container-fluid">
           <section>
-
-            <div className="row container-fluid">
+            <Welcome />
+            {/* <div className="row container-fluid">
               <div className="showContent col-10">
                 {api && <Api />}
                 {mem && <MemoryMadness />}
@@ -100,12 +112,40 @@ export default function Home() {
                   Trivia
                 </div>
               </div>
-            </div>
+            </div> */}
           </section>
           <section className="section" id="skills">
-            
-            skills
-            </section>
+            <Skills />
+          </section>
+          <section className="section" id="projects">
+            <Swiper
+              // install Swiper modules
+              modules={[Navigation, Pagination, Scrollbar, A11y, EffectCube]}
+              spaceBetween={50}
+              slidesPerView={1}
+              loop
+              effect="cube"
+              navigation
+              pagination={{ clickable: true }}
+              scrollbar={{ draggable: true }}
+              onSwiper={(swiper) => console.log(swiper)}
+              onSlideChange={() => console.log("slide change")}
+            >
+              <SwiperSlide>
+                <TakeOrder />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Api />
+              </SwiperSlide>
+              <SwiperSlide>
+                <MemoryMadness />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Trivia />
+              </SwiperSlide>
+              ...
+            </Swiper>
+          </section>
 
           <br />
           <br />
@@ -171,9 +211,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-
       </div>
-        
     </>
   );
 }

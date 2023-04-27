@@ -1,16 +1,16 @@
 export default function Trivia() {
   return (
     <>
-      <div className="page-fade-in shadow row justify-content-evenly py-3 rounded col-11">
+      <div className="page-fade-in shadow row justify-content-center py-3 rounded col-12">
         <h4 className="bg-primary text-light rounded-top">
           Mod 1 Project: Create A Game
         </h4>
         <p>Hosted on GitHub Pages</p>
-        <div className="col-11 d-flex justify-content-evenly">
+        <div className="col-12 d-flex justify-content-evenly">
           {/* Trivia */}
           <div
-            class="card col-11 m-0 p-0 shadow-lg"
-            style={{ width: "18rem;" }}
+            class="card col-12 col-lg-6 m-0 p-0 shadow-lg"
+            // style={{ width: "18rem;" }}
           >
             <h1 className="fs-3">Aznraven's Trivia</h1>
             <a href="https://aznraven.github.io/Trivia/">

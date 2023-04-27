@@ -19,7 +19,7 @@ code {
 }
 
 h1{
-  font-size: 10rem;
+  font-size: 4rem;
   background: linear-gradient(to right, rgb(67,124,205), #00d4ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -44,7 +44,7 @@ section{
   display: flex;
   height: 95vh;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
 }
 .flex-container {
   display: flex;
@@ -218,4 +218,9 @@ li:focus::after{
 #project{
   position: absolute;
   top: 20px;
+}
+
+.swiper {
+  width: 100vw;
+  height: 100vh;
 }

@@ -2,7 +2,7 @@ export default function Api() {
   return (
     <>
       
-        <div className="page-fade-in shadow row justify-content-evenly py-3 rounded col-11">
+        <div className="page-fade-in shadow row justify-content-center py-3 rounded col-12">
           <h4 className="bg-primary text-light rounded-top">
             Mod 2 Project: JavaScript React Api Calls
           </h4>
@@ -10,8 +10,8 @@ export default function Api() {
           <div className="col-11 d-flex justify-content-evenly">
             {/* Api */}
             <div
-              class="card col-11 m-0 p-0 shadow-lg"
-              style={{ width: "18rem;" }}
+              class="card col-12 col-lg-6  m-0 p-0 shadow-lg"
+            //   style={{ width: "18rem;" }}
             >
               <h1 className="fs-3">Api Calls</h1>
 
