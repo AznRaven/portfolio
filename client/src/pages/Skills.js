@@ -20,12 +20,12 @@ const { feArr, beArr, cmArr } = data;
 export default function Skills() {
   let fe = feArr.map((x) => {
     return (
-      <div className="skillIcon border border-primary d-flex flex-column text-center col-5 col-sm-3 col-lg-1 shadow">
+      <div className="skillIcon border border-primary d-flex flex-column text-center col-5 col-sm-3 col-lg-1 shadow justify-content-between">
         <div className="skillImg">
           <img className="skills" src={`${x.img}`} alt={x.name} />
         </div>
 
-        <div className="iconText">
+        <div className="iconText ">
           <strong>{x.name}</strong>
         </div>
       </div>

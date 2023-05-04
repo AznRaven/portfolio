@@ -24,8 +24,36 @@ h1{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   pointer-events: none;
-  opacity: 0;
-  animation: fade 1s ease-in .25s 1 normal forwards;
+  /* opacity: 0; */
+  /* animation: fade 1s ease-in .25s 1 normal forwards; */
+  /* animation: gradient 15s ease infinite; */
+  --color-one: hsl(15 90% 55%);
+  --color-two: hsl(40 95% 55%);
+  font-size: clamp(3rem, 25vmin, 8rem);
+  background: linear-gradient(
+                90deg,
+                var(--color-one),
+                var(--color-two),
+                var(--color-one)
+              ) 0 0 / 100% 100%;
+              color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: move-bg 8s infinite linear;
+  --bg-size: 400%;
+  --color-one: hsl(15 90% 55%);
+  --color-two: hsl(40 95% 55%);
+  font-size: clamp(3rem, 25vmin, 5rem);
+  background: linear-gradient(
+                90deg,
+                var(--color-one),
+                var(--color-two),
+                var(--color-one)
+              ) 0 0 / var(--bg-size) 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: move-bg 8s infinite linear;
 }
 @keyframes fade {
   0%{
@@ -33,6 +61,11 @@ h1{
   }
   100%{
     opacity: 1;
+  }
+}
+@keyframes move-bg {
+  to {
+    background-position: var(--bg-size) 0;
   }
 }
 html {
@@ -248,3 +281,18 @@ li:focus::after{
   stroke-dasharray: 60 105 60 300;
   stroke-dashoffset: -90;
 }
+
+@keyframes gradient {
+	0% {
+		background: 0% 50%;
+	}
+	50% {
+		background: 100% 50%;
+	}
+	100% {
+		background: 0% 50%;
+	}
+}
+
+
+
